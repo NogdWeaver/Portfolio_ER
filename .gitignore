@@ -1,0 +1,36 @@
+# Fichiers système
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Éditeurs et IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# Fichiers temporaires
+*.tmp
+*.log
+*.cache
+
+# Fichiers de sauvegarde
+*.bak
+*.backup
+*~
+
+# Fichiers de configuration locaux (si nécessaire)
+.env
+.env.local
+
+# Node modules (si ajouté plus tard)
+node_modules/
+package-lock.json
+
+# Fichiers de build (si ajouté plus tard)
+dist/
+build/

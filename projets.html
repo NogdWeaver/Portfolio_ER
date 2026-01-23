@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projets techniques SISR - Infrastructure et Réseaux">
+    <title>Projets Techniques - Portfolio SISR</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="brand-icon">🔧</span>
+                <span class="brand-text">Portfolio SISR</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="experience.html" class="nav-link">Expérience</a></li>
+                <li><a href="projets.html" class="nav-link active">Projets</a></li>
+                <li><a href="cv.html" class="nav-link">CV</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title">Projets Techniques SISR</h1>
+            <p class="page-subtitle">Réalisations en infrastructure et réseaux</p>
+        </div>
+    </header>
+
+    <!-- Content Section -->
+    <main class="content-section">
+        <div class="container">
+            <div class="projects-grid">
+                <!-- Projet 1 -->
+                <div class="project-card">
+                    <h3>Projet 1 : Mise en place d'un domaine Active Directory</h3>
+                    
+                    <div class="project-context">
+                        <strong>Contexte :</strong> 
+                        Mise en place d'une infrastructure Active Directory pour une entreprise 
+                        de 30 utilisateurs nécessitant une centralisation de la gestion des identités 
+                        et des ressources informatiques.
+                    </div>
+
+                    <div class="project-objectives">
+                        <h4>Objectifs du projet :</h4>
+                        <ul>
+                            <li>Créer un domaine Active Directory fonctionnel</li>
+                            <li>Centraliser l'authentification des utilisateurs</li>
+                            <li>Mettre en place une gestion unifiée des ressources</li>
+                            <li>Configurer les stratégies de groupe (GPO)</li>
+                            <li>Assurer la sécurité et la disponibilité du service</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-objectives">
+                        <h4>Architecture réseau :</h4>
+                        <ul>
+                            <li><strong>Contrôleur de domaine principal :</strong> Windows Server 2022</li>
+                            <li><strong>Contrôleur de domaine secondaire :</strong> Windows Server 2022 (réplication)</li>
+                            <li><strong>Services configurés :</strong> AD DS, DNS, DHCP</li>
+                            <li><strong>Topologie :</strong> Domaine unique avec sites distants</li>
+                            <li><strong>Sécurité :</strong> Stratégies de mot de passe, verrouillage de compte</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-tech">
+                        <h4>Technologies utilisées :</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Windows Server 2022</span>
+                            <span class="tech-tag">Active Directory</span>
+                            <span class="tech-tag">DNS</span>
+                            <span class="tech-tag">DHCP</span>
+                            <span class="tech-tag">GPO</span>
+                            <span class="tech-tag">PowerShell</span>
+                        </div>
+                    </div>
+
+                    <div class="project-objectives" style="margin-top: 1.5rem;">
+                        <h4>Résultats obtenus :</h4>
+                        <ul>
+                            <li>Infrastructure AD opérationnelle avec haute disponibilité</li>
+                            <li>Réduction du temps de gestion des utilisateurs de 60%</li>
+                            <li>Amélioration de la sécurité grâce aux GPO</li>
+                            <li>Documentation complète de l'architecture</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Projet 2 -->
+                <div class="project-card">
+                    <h3>Projet 2 : Sécurisation d'un réseau d'entreprise</h3>
+                    
+                    <div class="project-context">
+                        <strong>Contexte :</strong> 
+                        Renforcement de la sécurité du réseau d'une PME suite à un audit de sécurité 
+                        ayant révélé plusieurs vulnérabilités. Le réseau comptait environ 50 postes 
+                        de travail répartis sur plusieurs sites.
+                    </div>
+
+                    <div class="project-objectives">
+                        <h4>Objectifs du projet :</h4>
+                        <ul>
+                            <li>Segmenter le réseau en VLAN pour isoler les services</li>
+                            <li>Mettre en place un pare-feu avec règles de filtrage</li>
+                            <li>Renforcer la sécurité des accès distants</li>
+                            <li>Implémenter des règles de sécurité réseau</li>
+                            <li>Mettre en place une surveillance du trafic</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-objectives">
+                        <h4>Architecture de sécurité :</h4>
+                        <ul>
+                            <li><strong>VLAN Management :</strong> Administration réseau</li>
+                            <li><strong>VLAN Serveurs :</strong> Infrastructure serveurs</li>
+                            <li><strong>VLAN Utilisateurs :</strong> Postes de travail</li>
+                            <li><strong>VLAN Invités :</strong> Accès Wi-Fi public</li>
+                            <li><strong>Pare-feu :</strong> pfSense avec règles de filtrage</li>
+                            <li><strong>VPN :</strong> Accès sécurisé pour télétravail</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-tech">
+                        <h4>Outils utilisés :</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">pfSense</span>
+                            <span class="tech-tag">VLAN</span>
+                            <span class="tech-tag">Switch Layer 3</span>
+                            <span class="tech-tag">ACL</span>
+                            <span class="tech-tag">VPN IPSec</span>
+                            <span class="tech-tag">Wireshark</span>
+                        </div>
+                    </div>
+
+                    <div class="project-objectives" style="margin-top: 1.5rem;">
+                        <h4>Résultats obtenus :</h4>
+                        <ul>
+                            <li>Réseau segmenté en 4 VLAN fonctionnels</li>
+                            <li>Réduction de 80% des tentatives d'intrusion détectées</li>
+                            <li>Mise en place d'un VPN sécurisé pour le télétravail</li>
+                            <li>Amélioration de la traçabilité des accès réseau</li>
+                            <li>Conformité aux recommandations de sécurité</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section compétences techniques -->
+            <div class="content-card" style="margin-top: 2rem;">
+                <h2>Compétences Techniques Développées</h2>
+                <p>
+                    Ces projets m'ont permis de mettre en pratique les connaissances acquises en cours 
+                    et de développer des compétences techniques approfondies dans les domaines de 
+                    l'infrastructure système et de la sécurité réseau. J'ai également appris à 
+                    documenter mes réalisations et à présenter mes travaux de manière professionnelle.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">&copy; 2025 Portfolio BTS SIO SISR. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

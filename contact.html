@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact - Portfolio BTS SIO SISR">
+    <title>Contact - Portfolio SISR</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="brand-icon">🔧</span>
+                <span class="brand-text">Portfolio SISR</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="experience.html" class="nav-link">Expérience</a></li>
+                <li><a href="projets.html" class="nav-link">Projets</a></li>
+                <li><a href="cv.html" class="nav-link">CV</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title">Contact</h1>
+            <p class="page-subtitle">N'hésitez pas à me contacter pour toute question</p>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <main class="content-section">
+        <div class="container">
+            <div class="contact-container">
+                <!-- Message de succès -->
+                <div class="form-success" id="formSuccess">
+                    ✓ Message envoyé avec succès ! Je vous répondrai dans les plus brefs délais.
+                </div>
+
+                <!-- Formulaire de contact -->
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group" id="nameGroup">
+                        <label for="name">Nom *</label>
+                        <input 
+                            type="text" 
+                            id="name" 
+                            name="name" 
+                            placeholder="Votre nom"
+                            required
+                        >
+                        <span class="error-message" id="nameError">
+                            Le nom est requis (minimum 2 caractères)
+                        </span>
+                    </div>
+
+                    <div class="form-group" id="emailGroup">
+                        <label for="email">Adresse email *</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            placeholder="votre.email@example.com"
+                            required
+                        >
+                        <span class="error-message" id="emailError">
+                            Veuillez entrer une adresse email valide
+                        </span>
+                    </div>
+
+                    <div class="form-group" id="messageGroup">
+                        <label for="message">Message *</label>
+                        <textarea 
+                            id="message" 
+                            name="message" 
+                            placeholder="Votre message..."
+                            required
+                        ></textarea>
+                        <span class="error-message" id="messageError">
+                            Le message est requis (minimum 10 caractères)
+                        </span>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">
+                        Envoyer le message
+                    </button>
+                </form>
+
+                <!-- Informations de contact alternatives -->
+                <div class="content-card" style="margin-top: 2rem;">
+                    <h2>Autres moyens de contact</h2>
+                    <div style="text-align: center; padding: 1rem 0;">
+                        <p style="margin-bottom: 0.5rem;">
+                            <strong>📧 Email :</strong> email@example.com
+                        </p>
+                        <p style="margin-bottom: 0.5rem;">
+                            <strong>📱 Téléphone :</strong> 06 12 34 56 78
+                        </p>
+                        <p style="margin-bottom: 0.5rem;">
+                            <strong>📍 Localisation :</strong> [Ville], [Région]
+                        </p>
+                        <p style="margin-top: 1rem; color: var(--text-secondary);">
+                            Disponible pour des opportunités d'alternance, stage ou emploi 
+                            dans le domaine des systèmes et réseaux.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">&copy; 2025 Portfolio BTS SIO SISR. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
