@@ -9,23 +9,39 @@
 }
 
 :root {
-    /* Couleurs principales - Thème IT/Réseaux */
-    --primary-color: #2563eb;
-    --primary-dark: #1e40af;
-    --secondary-color: #10b981;
-    --accent-color: #f59e0b;
-    --danger-color: #ef4444;
+    /* ============================================
+       PALETTE DE COULEURS - THÈME ROUGE SOBRE
+       ============================================ */
     
-    /* Couleurs de fond */
-    --bg-primary: #0f172a;
-    --bg-secondary: #1e293b;
-    --bg-card: #334155;
-    --bg-hover: #475569;
+    /* Couleur principale : Rouge sobre et professionnel (tons désaturés) */
+    --primary-color: #8B2635;
+    --primary-dark: #6B1D28;
+    --primary-light: #A0303F;
+    --primary-hover: #B83D4F;
     
-    /* Couleurs de texte */
-    --text-primary: #f1f5f9;
-    --text-secondary: #cbd5e1;
-    --text-muted: #94a3b8;
+    /* Couleur secondaire : Noir */
+    --secondary-color: #000000;
+    --secondary-dark: #1a1a1a;
+    --secondary-light: #2d2d2d;
+    
+    /* Couleur de mise en avant : Blanc */
+    --highlight-color: #FFFFFF;
+    --highlight-off: #FAFAFA;
+    
+    /* Couleurs d'accent (pour éléments spécifiques) */
+    --accent-color: #C41E3A;
+    --danger-color: #D32F2F;
+    
+    /* Couleurs de fond - Gradients de noir vers gris foncé */
+    --bg-primary: #000000;
+    --bg-secondary: #1a1a1a;
+    --bg-card: #2d2d2d;
+    --bg-hover: #3d3d3d;
+    
+    /* Couleurs de texte - Blancs et gris clairs pour contraste */
+    --text-primary: #FFFFFF;
+    --text-secondary: #E0E0E0;
+    --text-muted: #B0B0B0;
     
     /* Espacements */
     --spacing-xs: 0.5rem;
@@ -172,7 +188,7 @@ main {
     height: 120px;
     margin: 0 auto;
     border-radius: 50%;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -234,7 +250,7 @@ main {
     transform: translateX(-50%);
     width: 80px;
     height: 3px;
-    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(90deg, var(--primary-color), var(--highlight-color));
     border-radius: 2px;
 }
 
@@ -290,8 +306,14 @@ main {
     padding: var(--spacing-xs) var(--spacing-sm);
     border-radius: var(--border-radius);
     font-size: 0.9rem;
-    color: var(--text-primary);
+    color: var(--highlight-color);
     border: 1px solid var(--primary-color);
+    transition: var(--transition);
+}
+
+.skill-list li:hover {
+    background-color: var(--primary-color);
+    color: var(--highlight-color);
 }
 
 /* ============================================
@@ -361,7 +383,7 @@ main {
 
 .btn-secondary:hover {
     background-color: var(--primary-color);
-    color: var(--text-primary);
+    color: var(--highlight-color);
     transform: translateY(-2px);
 }
 
@@ -406,7 +428,7 @@ main {
 }
 
 .content-card h3 {
-    color: var(--secondary-color);
+    color: var(--primary-light);
     margin-top: var(--spacing-md);
     margin-bottom: var(--spacing-sm);
     font-size: 1.3rem;
@@ -453,7 +475,7 @@ main {
 }
 
 .timeline-date {
-    color: var(--accent-color);
+    color: var(--primary-light);
     font-weight: 600;
     margin-bottom: var(--spacing-xs);
 }
@@ -494,7 +516,7 @@ main {
     font-style: italic;
     margin-bottom: var(--spacing-md);
     padding-left: var(--spacing-sm);
-    border-left: 3px solid var(--secondary-color);
+    border-left: 3px solid var(--primary-color);
 }
 
 .project-objectives {
@@ -502,7 +524,7 @@ main {
 }
 
 .project-objectives h4 {
-    color: var(--secondary-color);
+    color: var(--primary-light);
     margin-bottom: var(--spacing-xs);
 }
 
@@ -574,11 +596,11 @@ main {
 .cv-item {
     margin-bottom: var(--spacing-md);
     padding-left: var(--spacing-md);
-    border-left: 3px solid var(--secondary-color);
+    border-left: 3px solid var(--primary-color);
 }
 
 .cv-item h3 {
-    color: var(--secondary-color);
+    color: var(--primary-light);
     margin-bottom: var(--spacing-xs);
 }
 
@@ -670,7 +692,7 @@ main {
 .form-group textarea:focus {
     outline: none;
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+    box-shadow: 0 0 0 3px rgba(139, 38, 53, 0.2);
 }
 
 .form-group textarea {
@@ -696,8 +718,8 @@ main {
 
 .form-success {
     display: none;
-    background-color: var(--secondary-color);
-    color: var(--text-primary);
+    background-color: var(--primary-color);
+    color: var(--highlight-color);
     padding: var(--spacing-md);
     border-radius: var(--border-radius);
     margin-bottom: var(--spacing-md);
