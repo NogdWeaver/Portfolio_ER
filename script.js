@@ -274,3 +274,40 @@ window.addEventListener('load', function() {
         document.body.style.opacity = '1';
     }, 100);
 });
+
+// ============================================
+// ACCORDION CARTE DE RÉGION - PAGE EXPERIENCE
+// ============================================
+
+/**
+ * Gère l'accordion pour afficher/masquer la carte de région
+ * Animation douce avec gestion de l'accessibilité
+ */
+document.addEventListener('DOMContentLoaded', function() {
+    const regionMapToggle = document.getElementById('regionMapToggle');
+    const regionMapContent = document.getElementById('regionMapContent');
+    
+    // Vérifie que les éléments existent (présents uniquement sur la page experience)
+    if (regionMapToggle && regionMapContent) {
+        regionMapToggle.addEventListener('click', function() {
+            const isExpanded = regionMapToggle.getAttribute('aria-expanded') === 'true';
+            
+            // Toggle de l'état
+            const newState = !isExpanded;
+            regionMapToggle.setAttribute('aria-expanded', newState);
+            regionMapContent.setAttribute('aria-hidden', !newState);
+            
+            // Animation CSS gérée par les classes et max-height
+            // Le CSS s'occupe de l'animation via la transition sur max-height
+        });
+        
+        // Gestion du clavier (Accessibilité)
+        regionMapToggle.addEventListener('keydown', function(event) {
+            // Entrée ou Espace pour activer
+            if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                regionMapToggle.click();
+            }
+        });
+    }
+});

@@ -47,20 +47,49 @@
         <div class="container">
             <!-- Informations sur l'entreprise -->
             <div class="content-card">
-                <h2>Entreprise d'accueil</h2>
+                <h2 class="company-title">SNCF réseau</h2>
+                <div class="company-logo-container">
+                    <img src="SNCF_Réseau_logo.png" 
+                         alt="Logo SNCF Réseau" 
+                         class="company-logo">
+                </div>
                 <div class="timeline">
                     <div class="timeline-item">
-                        <div class="timeline-date">Septembre 2024 - En cours</div>
+                        <div class="timeline-date">Septembre 2024 - Août 2026</div>
                         <h3>Technicien Support Systèmes et Réseaux en Alternance</h3>
-                        <p><strong>Nom de l'entreprise :</strong> [Nom de l'entreprise]</p>
-                        <p><strong>Secteur d'activité :</strong> Services informatiques / SSII</p>
-                        <p><strong>Taille de l'entreprise :</strong> 50-200 employés</p>
-                        <p><strong>Localisation :</strong> [Ville, Région]</p>
+                        <p><strong>Nom de l'entreprise :</strong> SNCF Réseau </p>
+                        <p><strong>Secteur d'activité :</strong> ESTI - Etablissement des Services Télécom et Informatique</p>
+                        <p><strong>Equipe :</strong> Informatique - Système et Réseau </p>
+                        <p><strong>Localisation :</strong> Toulouse, Midi-Pyrénées</p>
                         <p>
-                            L'entreprise est spécialisée dans la fourniture de services informatiques
-                            aux entreprises. Elle propose des solutions d'infrastructure, de maintenance
-                            et de support technique pour un portefeuille varié de clients.
+                            Avec plus de 50 0000 collaborateurs, SNCF Réseau est un établissement public de l'Etat français qui a pour mission 
+                            d'entretenir, moderniser, développer et exploiter le réseau ferré national.
                         </p>
+                        <p>
+                            Le réseau en Occitanie compte 2 600 km de lignes. L'occitanie apppartient à l'ESTI Atlantique, 
+                            et notre secteur comprend toute la région Midi-Pyrénées. L'équipe Système et Réseau gère l'ensemble 
+                            des équipements réseau de la région, ainsi que la mise en place et la maintenance des serveurs relatifs à l'activité des
+                            agents SNCF travaillant en occitanie.  
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Section accordion pour la carte de région -->
+                <div class="region-map-section">
+                    <button class="region-map-toggle" 
+                            id="regionMapToggle" 
+                            aria-expanded="false" 
+                            aria-controls="regionMapContent"
+                            aria-label="Afficher ou masquer la carte de la région">
+                        <span class="toggle-text">Carte des emprises SNCF</span>
+                        <span class="toggle-icon" aria-hidden="true">▼</span>
+                    </button>
+                    <div class="region-map-content" 
+                         id="regionMapContent" 
+                         aria-hidden="true">
+                        <img src="Réseau ferroviaire Occitanie nov 2022 - 40x40cm.png" 
+                             alt="Carte de la région Occitanie - Midi-Pyrénées" 
+                             class="region-map-image">
                     </div>
                 </div>
             </div>
@@ -68,46 +97,50 @@
             <!-- Missions réalisées -->
             <div class="content-card">
                 <h2>Missions Réalisées</h2>
-
-                <h3>1. Administration de serveurs Windows / Linux</h3>
-                <ul>
-                    <li>Installation et configuration de serveurs Windows Server 2019/2022</li>
-                    <li>Gestion des rôles et fonctionnalités (AD DS, DNS, DHCP, File Services)</li>
-                    <li>Administration de serveurs Linux (Debian, Ubuntu Server)</li>
-                    <li>Configuration et maintenance des services système</li>
-                    <li>Surveillance et optimisation des performances serveurs</li>
-                    <li>Gestion des sauvegardes et plans de reprise d'activité</li>
-                </ul>
-
-                <h3>2. Gestion des utilisateurs (Active Directory)</h3>
+                <h3>Préparation et migration de postes</h3>
                 <ul>
                     <li>Création et gestion des comptes utilisateurs et groupes</li>
-                    <li>Configuration des stratégies de groupe (GPO)</li>
+                    <li>Application stratégies de groupe (GPO)</li>
                     <li>Gestion des permissions et droits d'accès</li>
-                    <li>Résolution des problèmes d'authentification</li>
-                    <li>Migration de comptes utilisateurs</li>
+                    <li>Masterisation des postes et installation des application metiers</li>
+                    <li>Déplacement et déploiment de postes  aux agents de la régions</li>
+                    <li>Suivi et avancement des Bon travaux</li>
+
+
                     <li>Documentation des procédures d'administration</li>
                 </ul>
 
-                <h3>3. Support et maintenance réseau</h3>
+                <h3>Support et maintenance réseau</h3>
                 <ul>
                     <li>Diagnostic et résolution d'incidents réseau</li>
-                    <li>Configuration de switchs et routeurs (Cisco, HP)</li>
-                    <li>Mise en place et gestion de VLAN</li>
-                    <li>Configuration du routage statique et dynamique</li>
-                    <li>Analyse de trafic réseau avec outils de monitoring</li>
-                    <li>Support technique niveau 1 et 2 pour les utilisateurs</li>
-                </ul>
+                    <li>Application des configuration de switchs en fonction des différent firmwares (Huawei, Aruba, HP)</li>
+                    <li>Configuration et application des VLANs utilisés - gestion des sous réseaux </li>
+                    <li>Configuration du routage</li>
+                    <li>Analyse de trafic réseau avec outils de monitoring (Wireshark)</li>
 
-                <h3>4. Sécurisation du système d'information</h3>
-                <ul>
-                    <li>Configuration et gestion de pare-feu (pfSense, Fortinet)</li>
-                    <li>Mise en place de règles de filtrage</li>
-                    <li>Gestion des certificats SSL/TLS</li>
-                    <li>Audit de sécurité et identification des vulnérabilités</li>
-                    <li>Application des correctifs de sécurité</li>
-                    <li>Formation des utilisateurs aux bonnes pratiques de sécurité</li>
                 </ul>
+                <h3>Migration de l'infrastructure réseau sur le territoire Midi-Pyrénées</h3>
+                <ul>
+                    <li>Prise de rendez vous avec les gares/agent et déplacement sur les emprises SNCF</li>
+                    <li>Prise en compte de la qualité de service et limitation des coiupures réseaux pendant l'installation physique</li>
+                    <li>Suivi et vérification du bon fonctionnement des nouveaux équipements</li>
+                    <li>Base de données de l'inventaire et schéma réseau des différentes parties du réseau SNCF Midi-Pyrénées</li>
+                </ul>
+                <h3>Gestion des chemin physique de Fibre Optique</h3>
+                    <ul>
+                        <li>Gestion des incidents (vol de cable, incendies, travaux) provoquant une coupure des chemin FO de nos équipements</li>
+                        <li>Prévision et re-routage des liens pour permettre une continuité de servce sur les zones affectées</li>
+                        <li>Collaboration avec les équipes télécom </li>
+                        <li>Schématisation et recencement de nos réseau FO </li>
+                    </ul>
+                <h3>Supervision de serveur</h3>
+                    <ul>
+                        <li>Installation physique de serveur Windows</li>
+                        <li>Configuration des équipements réseau pour permettre l'accès aux serveurs</li>
+                        <li>Remplacement de disque dur et gestion du stockage nécessaire</li>
+                        <li>Statégies de sauvegardes</li>
+                        <li>Mise en place de machine virtuelles de supervision de serveur (distribution linux RedHat)</li>
+                    </ul>
             </div>
 
             <!-- Outils et technologies -->
@@ -120,26 +153,23 @@
                         <h3 class="skill-title">Systèmes d'exploitation</h3>
                         <ul class="skill-list">
                             <li>Windows Server</li>
-                            <li>Linux (Debian/Ubuntu)</li>
-                            <li>Windows 10/11</li>
+                            <li>Linux (Ubuntu/RedHat)</li>
+                            <li>Windows 11 - Masters conforme aux stratégies et besoin métiers de l'entreprise</li>
                         </ul>
                     </div>
 
-                    <div class="skill-card">
-                        <div class="skill-icon">☁️</div>
-                        <h3 class="skill-title">Virtualisation</h3>
-                        <ul class="skill-list">
-                            <li>VMware vSphere</li>
-                            <li>Hyper-V</li>
-                            <li>VirtualBox</li>
-                        </ul>
-                    </div>
+
 
                     <div class="skill-card">
                         <div class="skill-icon">🌐</div>
                         <h3 class="skill-title">Réseaux</h3>
                         <ul class="skill-list">
-                            <li>Cisco IOS</li>
+                            <li>Huawei</li>
+                            <li>HP</li>
+                            <li>Aruba</li>
+                            <li>3Com (déprécié)</li>
+                            <li>Gestion Fibre optique</li>
+                            <li>Stock et besoin en cable cuivre</li>
                         </ul>
                     </div>
 
@@ -148,8 +178,8 @@
                         <h3 class="skill-title">Sécurité</h3>
                         <ul class="skill-list">
                             <li>Active Directory</li>
-                            <li>GPO</li>
-                            <li>Pare-feu</li>
+                            <li>Configuration réseau protégées (protocoles de chiffrement, gestion des mots de passes)</li>
+                            
                         </ul>
                     </div>
 
@@ -157,22 +187,17 @@
                         <div class="skill-icon">🛠️</div>
                         <h3 class="skill-title">Outils de monitoring</h3>
                         <ul class="skill-list">
-                            <li>PRTG</li>
+
                             <li>Wireshark</li>
-                            <li>Nagios</li>
+                            <li>Sonde de températurese - humidité et supervision</li>
                         </ul>
                     </div>
 
-                    <div class="skill-card">
-                        <div class="skill-icon">💾</div>
-                        <h3 class="skill-title">Sauvegarde</h3>
-                        <ul class="skill-list">
-                            <li>Veeam</li>
-                            <li>Windows Backup</li>
-                            <li>rsync</li>
-                        </ul>
-                    </div>
                 </div>
+            </div>
+            <!-- SECTION FEST -->
+            <div class="content-card">
+                 fest 
             </div>
 
             <!-- Compétences acquises -->
@@ -181,8 +206,11 @@
                 <p>
                     Cette alternance m'a permis de développer des compétences techniques solides
                     dans l'administration de systèmes et réseaux, ainsi qu'une meilleure compréhension
-                    des enjeux de sécurité informatique en entreprise. J'ai également amélioré mes
-                    compétences en communication et en résolution de problèmes dans un contexte professionnel.
+                    des enjeux de sécurité informatique en entreprise. L'échelle du réseau SNCF de la region Occitanne m'a permis 
+                    une prise de conscience de la logistique nécessaire pour assurer le fonctionnement d'un réseau de cet ampleur.
+                    J'ai également amélioré mes 
+                    compétences en communication, en résolution de problèmes dans un contexte professionnel, ainsi qu'en supervision et gestion
+                    globale des inventaires et des besoins en équipements (de la commande à la mùaintenance en passant par l'installation).
                 </p>
             </div>
         </div>
