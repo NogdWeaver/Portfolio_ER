@@ -44,7 +44,7 @@
             <div class="projects-grid">
                 <!-- Projet 1 -->
                 <div class="project-card">
-                    <h3>Projet 1 : Migration d'équipement réseau de la region Midi-Pyrénées</h3>
+                    <h3>Projet 1 : Réseau - Migration d'équipement réseau de la region Midi-Pyrénées</h3>
                     
                     <div class="project-context">
                         <strong>Contexte :</strong> 
@@ -99,47 +99,46 @@
 
                 <!-- Projet 2 -->
                 <div class="project-card">
-                    <h3>Projet 2 : PLACEHOLDER</h3>
+                    <h3>Projet 2 : Système - Architecture système d'un site type "Portfolio"</h3>
                     
                     <div class="project-context">
                         <strong>Contexte :</strong> 
-                        Renforcement de la sécurité du réseau d'une PME suite à un audit de sécurité 
-                        ayant révélé plusieurs vulnérabilités. Le réseau comptait environ 50 postes 
-                        de travail répartis sur plusieurs sites.
+                        Mise en place un site type "portfolio" fonctionnel et modulable, intégré dans une architecture système et réseau sécurisée. 
+                        En utilisant Apache2 sur Ubuntu, l'objectif et de documenter et d'appliquer toutes les étapes nécessaire aux besoins de sécurité et de confidentialité
+                        d'une plateforme utilisée dans le milieu professionnel, selon les réglementations RGPD.  
                     </div>
 
                     <div class="project-objectives">
                         <h4>Objectifs du projet :</h4>
                         <ul>
-                            <li>Segmenter le réseau en VLAN pour isoler les services</li>
-                            <li>Mettre en place un pare-feu avec règles de filtrage</li>
-                            <li>Renforcer la sécurité des accès distants</li>
-                            <li>Implémenter des règles de sécurité réseau</li>
-                            <li>Mettre en place une surveillance du trafic</li>
+                            <li>Installation et configuration serveur </li>
+                            <li>Configuration SSH</li>
+                            <li>Mise en place d'une base de données </li>
+                            <li>Sécurisation de la Connection </li>
+                            <li>Configuration d'un FireWall </li>
+                            <li>Mise en place d'un VPN pour isoler la BDD</li>
                         </ul>
                     </div>
 
                     <div class="project-objectives">
-                        <h4>Architecture de sécurité :</h4>
+                        <h4>Architecture :</h4>
+                        <p>L'architecture derrière ce projet à pour objectif d'appliquer les règles relatives aux législations RGPD</p>
                         <ul>
-                            <li><strong>VLAN Management :</strong> Administration réseau</li>
-                            <li><strong>VLAN Serveurs :</strong> Infrastructure serveurs</li>
-                            <li><strong>VLAN Utilisateurs :</strong> Postes de travail</li>
-                            <li><strong>VLAN Invités :</strong> Accès Wi-Fi public</li>
-                            <li><strong>Pare-feu :</strong> pfSense avec règles de filtrage</li>
-                            <li><strong>VPN :</strong> Accès sécurisé pour télétravail</li>
+                            <li><strong>Intégrité :</strong> Redondance serveur</li>
+                            <li><strong>Disponibilité :</strong> Lien FO et 1G cuivre, assurant une QoS et un débit de bonne qualité - Load Balancer</li>
+                            <li><strong>confidentialité :</strong>Protocoles de chiffrement sécurisé, configuration SSH par clé, isolation de la BDD</li>
                         </ul>
                     </div>
 
                     <div class="project-tech">
                         <h4>Outils utilisés :</h4>
                         <div class="tech-tags">
-                            <span class="tech-tag">pfSense</span>
-                            <span class="tech-tag">VLAN</span>
-                            <span class="tech-tag">Switch Layer 3</span>
-                            <span class="tech-tag">ACL</span>
-                            <span class="tech-tag">VPN IPSec</span>
-                            <span class="tech-tag">Wireshark</span>
+                            <span class="tech-tag">Apache2 - Ubuntu serveur</span>
+                            <span class="tech-tag">OracleVM VirtualBox</span>
+                            <span class="tech-tag">SSH - Putty</span>
+                            <span class="tech-tag">PHP - MYSQL</span>
+                            <span class="tech-tag">VPN Wireguard</span>
+                            <span class="tech-tag">Iptable - pfsense</span>
                         </div>
                     </div>
 
