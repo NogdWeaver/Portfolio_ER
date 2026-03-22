@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <title>Projets Techniques - Portfolio SISR</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar">
@@ -45,10 +47,10 @@
                 <!-- Projet 1 -->
                 <div class="project-card">
                     <h3>Projet 1 : Réseau - Migration d'équipement réseau de la region Midi-Pyrénées</h3>
-                    
+
                     <div class="project-context">
-                        <strong>Contexte :</strong> 
-                            Renouvellement et migration d'équipements réseau sur la région Midi-Pyrénées 
+                        <strong>Contexte :</strong>
+                        Renouvellement et migration d'équipements réseau sur la région Midi-Pyrénées
                     </div>
 
                     <div class="project-objectives">
@@ -58,19 +60,25 @@
                             <li>Configuration des équipements de couche 2 </li>
                             <li>Déplacements et installation du matériel</li>
                             <li>Assurer la sécurité et la disponibilité du service</li>
-                            <li>Prise en compte de l’expérience utilisateur (agents ferroviaire) – Limitation de l'interruption de service</li>
+                            <li>Prise en compte de l’expérience utilisateur (agents ferroviaire) – Limitation de
+                                l'interruption de service</li>
                         </ul>
                     </div>
 
                     <div class="project-objectives">
                         <h4>Architecture réseau :</h4>
                         <ul>
-                            <li><strong>Equipements utilisés:</strong> Commutateur de la gamme Huawei, réutilisation d'équipement HP et Aruba déjà en inventaire</li>
-                            <li><strong>Services configurés :</strong> DHCP, Qualité de service (besoin en TOIP), Segmentation réseau, gestion d'administration</li>
-                            <li><strong>Topologie et schéma réseau :</strong> Besoin réseau dépendant des sites, plusieurs niveau d'équipement jusqu'a l'utiilsateur 
-                            (routeur, coeur de réseau, fédérateur, switch d'extremité). </li>
-                            <li><strong>Sécurité :</strong> Protocol de chiffrement, segmentation réseau (+ de 50 vlans utilisé)</li>
-                            <li><strong>Connection entre équipements : </strong>Réseau de Fibre optique et cable cuivre</li>
+                            <li><strong>Equipements utilisés:</strong> Commutateur de la gamme Huawei, réutilisation
+                                d'équipement HP et Aruba déjà en inventaire</li>
+                            <li><strong>Services configurés :</strong> DHCP, Qualité de service (besoin en TOIP),
+                                Segmentation réseau, gestion d'administration</li>
+                            <li><strong>Topologie et schéma réseau :</strong> Besoin réseau dépendant des sites,
+                                plusieurs niveau d'équipement jusqu'a l'utiilsateur
+                                (routeur, coeur de réseau, fédérateur, switch d'extremité). </li>
+                            <li><strong>Sécurité :</strong> Protocol de chiffrement, segmentation réseau (+ de 50 vlans
+                                utilisé)</li>
+                            <li><strong>Connection entre équipements : </strong>Réseau de Fibre optique et cable cuivre
+                            </li>
                         </ul>
                     </div>
 
@@ -99,57 +107,56 @@
 
                 <!-- Projet 2 -->
                 <div class="project-card">
-                    <h3>Projet 2 : Système - Architecture système d'un site type "Portfolio"</h3>
-                    
+                    <h3>Projet 2 : Système - Conception et configuration d’un domaine Active Directory Windows Server
+                        2022</h3>
+
                     <div class="project-context">
-                        <strong>Contexte :</strong> 
-                        Mise en place un site type "portfolio" fonctionnel et modulable, intégré dans une architecture système et réseau sécurisée. 
-                        En utilisant Apache2 sur Ubuntu, l'objectif et de documenter et d'appliquer toutes les étapes nécessaire aux besoins de sécurité et de confidentialité
-                        d'une plateforme utilisée dans le milieu professionnel, selon les réglementations RGPD.  
+                        <strong>Contexte :</strong>
+                        Dans le cadre de la gestion du système d’information d’une petite entreprise, l’objectif était
+                        de centraliser
+                        l’administration des postes et des utilisateurs via un domaine Active Directory.
+                        L’infrastructure devait permettre l’attribution automatique des adresses IP, la résolution de
+                        noms, la gestion des
+                        droits d’accès aux fichiers et l’application de stratégies de sécurité.
+                        Les machines virtuelles du serveur et de l'utilisateurs sont hébergées sur Proxmox.
+
                     </div>
 
                     <div class="project-objectives">
                         <h4>Objectifs du projet :</h4>
                         <ul>
-                            <li>Installation et configuration serveur </li>
-                            <li>Configuration SSH</li>
-                            <li>Mise en place d'une base de données </li>
-                            <li>Sécurisation de la Connection </li>
-                            <li>Configuration d'un FireWall </li>
-                            <li>Mise en place d'un VPN pour isoler la BDD</li>
+                            <li>Installation et configuration du serveur </li>
+                            <li>Configuration des gpo</li>
+                            <li>Mise en place d'un DNS </li>
+                            <li>Mise en place d'un DHCP</li>
+                            <li>Automatisation des règles de sécurité et de configuration des postes. </li>
+                            <li>Création d'un serveur de fichier sécurisé.</li>
                         </ul>
                     </div>
-
                     <div class="project-objectives">
                         <h4>Architecture :</h4>
-                        <p>L'architecture derrière ce projet à pour objectif d'appliquer les règles relatives aux législations RGPD</p>
-                        <ul>
-                            <li><strong>Intégrité :</strong> Redondance serveur</li>
-                            <li><strong>Disponibilité :</strong> Lien FO et 1G cuivre, assurant une QoS et un débit de bonne qualité - Load Balancer</li>
-                            <li><strong>confidentialité :</strong>Protocoles de chiffrement sécurisé, configuration SSH par clé, isolation de la BDD</li>
-                        </ul>
-                        
+                        <p> Une architecture simple qui conncte la VM Windows Server 2022 et la VM utilisateur.</p>
                     </div>
 
                     <div class="project-tech">
                         <h4>Outils utilisés :</h4>
                         <div class="tech-tags">
-                            <span class="tech-tag">Apache2 - Ubuntu serveur</span>
-                            <span class="tech-tag">OracleVM VirtualBox</span>
-                            <span class="tech-tag">SSH - Putty</span>
-                            <span class="tech-tag">PHP - MYSQL</span>
-                            <span class="tech-tag">VPN Wireguard</span>
-                            <span class="tech-tag">Iptable - pfsense</span>
+                            <span class="tech-tag">Proxmox</span>
+                            <span class="tech-tag">Windows Server 2022</span>
+                            <span class="tech-tag">Windows 10 64bit</span>
+                            <span class="tech-tag">GPOL</span>
+                            <span class="tech-tag">DNS</span>
+                            <span class="tech-tag">Serveur de partage de fichier</span>
                         </div>
                     </div>
 
                     <div class="project-objectives" style="margin-top: 1.5rem;">
                         <h4>Résultats obtenus :</h4>
                         <ul>
-                            <li>Serveur fonctionnel, accès au site type "porftolio"</li>
-                            <li>Sécurisation des données et supervision administration</li>
-                            <li>Mise en place d'un tunnel VPN sécurisé pour l'accès à la Base de donnée</li>
-                            <li>Conformité aux réglementations RGPD</li>
+                            <li>Serveur opérationnel</li>
+                            <li>DNS et DHCP fonctionnels</li>
+                            <li>Application des GPO et automatisation des règles de sécurité fonctionnelle</li>
+                            <li>Possibilité de partage de fichier via le serveur de partage</li>
                         </ul>
                     </div>
                 </div>
@@ -159,9 +166,9 @@
             <div class="content-card" style="margin-top: 2rem;">
                 <h2>Compétences Techniques Développées</h2>
                 <p>
-                    Ces projets m'ont permis de mettre en pratique les connaissances acquises en cours 
-                    et de développer des compétences techniques approfondies dans les domaines de 
-                    l'infrastructure système et de la sécurité réseau. J'ai également appris à 
+                    Ces projets m'ont permis de mettre en pratique les connaissances acquises en cours
+                    et de développer des compétences techniques approfondies dans les domaines de
+                    l'infrastructure système et de la sécurité réseau. J'ai également appris à
                     documenter mes réalisations et à présenter mes travaux de manière professionnelle.
                 </p>
             </div>
@@ -177,4 +184,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
